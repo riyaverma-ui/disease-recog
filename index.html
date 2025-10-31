@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Recognition System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Disease Recognition System</h1>
+            <p class="subtitle">Enter your symptoms for analysis</p>
+        </header>
+
+        <div class="symptoms-input-section">
+            <div class="quick-symptoms">
+                <h3>Common Symptoms</h3>
+                <div class="symptom-buttons">
+                    <button class="symptom-btn">Fever</button>
+                    <button class="symptom-btn">Headache</button>
+                    <button class="symptom-btn">Cough</button>
+                    <button class="symptom-btn">Fatigue</button>
+                    <button class="symptom-btn">Body Ache</button>
+                    <button class="symptom-btn">Sore Throat</button>
+                    <button class="symptom-btn">Nausea</button>
+                    <button class="symptom-btn">Dizziness</button>
+                </div>
+            </div>
+
+            <div class="manual-input">
+                <h3>Enter Additional Symptoms</h3>
+                <textarea id="symptoms-input" placeholder="Enter symptoms separated by commas (e.g., fever, headache, cough)"></textarea>
+                <button id="analyze-btn" class="primary-btn">Analyze Symptoms</button>
+            </div>
+        </div>
+
+        <div class="results-section" style="display: none;">
+            <h2>Analysis Results</h2>
+            <div class="results-container">
+                <!-- Results will be dynamically populated here -->
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <p><strong>Medical Disclaimer:</strong> This tool is for educational purposes only and should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider.</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
